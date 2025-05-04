@@ -4,7 +4,7 @@ Bispo: 5 casas na diagonal superior direita
 Torre: 5 casas para a direita
 Rainha: 8 casas para a esquerda */
 
-int main(){
+/*int main(){
     //VARIAVEIS DOS ELEMENTOS QUE VAI TER NO XADREZ
     int option;
     printf("----MENU PRINCIPAL----\n");
@@ -61,3 +61,80 @@ do{
 }while(c < rainha);
 }
 
+#include<stdio.h>
+int bispo(int n){
+    if(n < 5){
+        for(int l = 0; l < 1; l++){ 
+            int v = 0; // LINHA
+            printf("CIMA e ");
+            while(v == l){
+                printf("DIREITA\n");
+                v ++;
+            }
+    }
+
+    }else{
+        return 1;
+    } return bispo(n+1);
+  
+}
+int rainha(int n1){
+   if(n1 < 8){
+    printf("Esquerda\n");
+    rainha(n1+1);
+   }
+   else{
+    return 1;
+   }
+}
+
+
+int torre(int n2){
+    if(n2 < 5){
+        for(int t=0;t<1;t++){
+            printf("DIREITA\n");
+        }
+    }else{
+        return 1;
+    }torre(n2+1);
+}
+
+int cavalo(int n3){
+    if (n3 < 2)
+    {
+        for(int l = 0; l < 1; l++)
+        {
+            int c = 0;//COLUNA
+            while(c < 1){
+            printf("DIREITA\n");
+            c++;
+        }
+        }printf("CIMA\n");
+    }else{ return 1;}
+    
+  
+}*/
+//xadrez v2 - fiz outro 
+
+int main(){
+    printf("_________\n");
+        printf("BISPO\n");
+    printf("_________\n");
+        bispo(0);
+        //RAINHA
+    printf("_________\n");
+        printf("RAINHA\n");
+    printf("_________\n");
+        rainha(0);
+    printf("_________\n");
+        printf("TORRE\n");
+    printf("_________\n");
+        torre(0);
+    printf("_________\n");
+        printf("CAVALO\n");
+    printf("_________\n");
+        cavalo(1);
+    return 0;
+}
+//ENTENDI QUE NÃO SEI NADA DE LOGICA E XADREZ KKKKKKKKKK, FIZ ESSA GAMBIARRA AI, QUALQUER COISA 
+//AVISA, QUE TIME!!
