@@ -60,7 +60,7 @@ do{
     c++;
 }while(c < rainha);
 }
-
+*/
 #include<stdio.h>
 int bispo(int n){
     if(n < 5){
@@ -113,7 +113,7 @@ int cavalo(int n3){
     }else{ return 1;}
     
   
-}*/
+}
 //xadrez v2 - fiz outro 
 
 int main(){
